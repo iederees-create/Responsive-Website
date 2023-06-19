@@ -10,6 +10,12 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #000;
+      background-image: url('space.jpg'); /* Replace 'space.jpg' with the path to your outer space background image */
+      background-repeat: repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
     }
 
     /* Header styles */
@@ -20,93 +26,21 @@
       text-align: center;
     }
 
-    /* Navigation styles */
-    nav {
-      background-color: #666;
-      padding: 10px;
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul li {
-      margin-right: 10px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      padding: 5px;
-    }
-
     /* Main content styles */
     main {
       padding: 20px;
     }
 
-    /* Section styles */
-    section {
-      margin-bottom: 40px;
-    }
-
-    section h2 {
-      margin-bottom: 10px;
-    }
-
-    /* Product card styles */
-    .product-card {
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-
-    /* Form styles */
-    form {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-
-    textarea {
-      resize: vertical;
-      height: 100px;
-    }
-
-    input[type="submit"] {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-    }
-
-    /* Newsletter styles */
-    .newsletter-section {
-      text-align: center;
-    }
-
-    .newsletter-form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-    }
-
-    .newsletter-form input[type="email"] {
-      width: 300px;
-      margin-right: 10px;
+    /* Responsive layout */
+    @media (min-width: 768px) {
+      /* Apply styles for larger screens */
+      main {
+        display: flex;
+        justify-content: space-between;
+      }
+      section {
+        flex-basis: 48%;
+      }
     }
 
     /* Footer styles */
@@ -116,87 +50,70 @@
       padding: 20px;
       text-align: center;
     }
+
+    /* E-commerce styles */
+    .product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .product img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+
+    /* Newsletter styles */
+    .newsletter {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .newsletter input[type="email"] {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .newsletter input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Responsive Website with E-commerce and Newsletter</h1>
+    <h1>Responsive Website</h1>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#ecommerce">E-commerce</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Introduce your company and provide a brief overview of your mission and values.</p>
+    <section>
+      <h2>Section 1</h2>
+      <p>This is the first section of the website.</p>
     </section>
 
-    <section id="services">
-      <h2>Services</h2>
-      <p>Highlight the services you offer and how they can benefit your customers.</p>
-    </section>
+    <section>
+      <h2>Section 2</h2>
+      <p>This is the second section of the website.</p>
 
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <p>Showcase your previous work and projects to demonstrate your skills and expertise.</p>
-    </section>
-
-    <section id="testimonials">
-      <h2>Testimonials</h2>
-      <p>Display testimonials from satisfied customers to build trust and credibility.</p>
-    </section>
-
-    <section id="ecommerce">
-      <h2>E-commerce</h2>
-      <p>Present your products or services for online purchase and provide an easy way for customers to make transactions.</p>
-
-      <div class="product-card">
+      <div class="product">
+        <img src="product1.jpg" alt="Product 1">
         <h3>Product 1</h3>
-        <p>Description of Product 1.</p>
-        <p>Price: $19.99</p>
+        <p>$99.99</p>
         <button>Add to Cart</button>
       </div>
 
-      <div class="product-card">
+      <div class="product">
+        <img src="product2.jpg" alt="Product 2">
         <h3>Product 2</h3>
-        <p>Description of Product 2.</p>
-        <p>Price: $29.99</p>
+        <p>$149.99</p>
         <button>Add to Cart</button>
-      </div>
-
-      <div class="product-card">
-        <h3>Product 3</h3>
-        <p>Description of Product 3.</p>
-        <p>Price: $39.99</p>
-        <button>Add to Cart</button>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form action="#" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <input type="submit" value="Send Message">
-      </form>
-    </section>
-
-    <section class="newsletter-section">
-      <h2>Subscribe to Our Newsletter</h2>
-      <p>Stay updated with our latest news and offers by subscribing to our monthly newsletter.</p>
-      <div class="newsletter-form">
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="submit" value="Subscribe">
       </div>
     </section>
   </main>
@@ -204,5 +121,6 @@
   <footer>
     <p>&copy; 2023 Your Name</p>
   </footer>
-</body>
-</html>
+
+  <div class="newsletter">
+    <h2>Subscribe to Our Newsletter
