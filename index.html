@@ -20,6 +20,30 @@
       text-align: center;
     }
 
+    /* Navigation styles */
+    nav {
+      background-color: #666;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+    }
+
     /* Main content styles */
     main {
       padding: 20px;
@@ -55,28 +79,38 @@
     <h1>Responsive Website with E-commerce</h1>
   </header>
 
+  <nav>
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#ecommerce">E-commerce</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <section>
+    <section id="about">
       <h2>About Us</h2>
       <p>This is the About Us section of the website where you can showcase information about your business and its values.</p>
     </section>
 
-    <section>
+    <section id="services">
       <h2>Services</h2>
       <p>Highlight the various services you offer to your customers, such as web development, graphic design, SEO, and more.</p>
     </section>
 
-    <section>
+    <section id="portfolio">
       <h2>Portfolio</h2>
       <p>Showcase your previous work and projects to provide potential customers with examples of your expertise and capabilities.</p>
     </section>
 
-    <section>
+    <section id="testimonials">
       <h2>Testimonials</h2>
       <p>Include testimonials from satisfied clients to build trust and credibility for your services.</p>
     </section>
 
-    <section>
+    <section id="ecommerce">
       <h2>E-commerce</h2>
       <div class="product-card">
         <h3>Product 1</h3>
