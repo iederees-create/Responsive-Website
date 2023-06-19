@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <style>
+    /* Basic styling for the page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Main content styles */
+    main {
+      padding: 20px;
+    }
+
+    /* Responsive layout */
+    @media (min-width: 768px) {
+      /* Apply styles for larger screens */
+      main {
+        display: flex;
+        justify-content: space-between;
+      }
+      section {
+        flex-basis: 48%;
+      }
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Website</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Section 1</h2>
+      <p>This is the first section of the website.</p>
+    </section>
+
+    <section>
+      <h2>Section 2</h2>
+      <p>This is the second section of the website.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Iederees</p>
+  </footer>
+</body>
+</html>
