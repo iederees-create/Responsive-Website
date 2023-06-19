@@ -65,6 +65,33 @@
       margin-bottom: 20px;
     }
 
+    /* Form styles */
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
     /* Footer styles */
     footer {
       background-color: #333;
@@ -86,6 +113,7 @@
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#ecommerce">E-commerce</a></li>
+      <li><a href="#contact">Contact Us</a></li> <!-- Added Contact Us link -->
     </ul>
   </nav>
 
@@ -102,16 +130,18 @@
 
     <section id="portfolio">
       <h2>Portfolio</h2>
-      <p>Showcase your previous work and projects to provide potential customers with examples of your expertise and capabilities.</p>
+      <p>Showcase your previous work and projects to demonstrate your skills and expertise.</p>
     </section>
 
     <section id="testimonials">
       <h2>Testimonials</h2>
-      <p>Include testimonials from satisfied clients to build trust and credibility for your services.</p>
+      <p>Display testimonials from satisfied customers to build trust and credibility.</p>
     </section>
 
     <section id="ecommerce">
       <h2>E-commerce</h2>
+      <p>Present your products or services for online purchase and provide an easy way for customers to make transactions.</p>
+
       <div class="product-card">
         <h3>Product 1</h3>
         <p>Description of Product 1.</p>
@@ -132,6 +162,17 @@
         <p>Price: $39.99</p>
         <button>Add to Cart</button>
       </div>
+
+      <!-- Contact form -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <input type="submit" value="Send Message">
+        </form>
+      </section>
     </section>
   </main>
 
