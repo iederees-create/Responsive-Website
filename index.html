@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Website with E-commerce and Newsletter</title>
-  <style>
+ <style>
   /* Basic styling for the page */
   body {
     font-family: Arial, sans-serif;
@@ -90,31 +90,83 @@
 </head>
 <body>
   <header>
-    <h1>Responsive Website</h1>
+    <h1>Responsive Website with E-commerce and Newsletter</h1>
   </header>
 
+  <nav>
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#ecommerce">E-commerce</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <section>
-      <h2>Section 1</h2>
-      <p>This is the first section of the website.</p>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Introduce your company and provide a brief overview of your mission and values.</p>
     </section>
 
-    <section>
-      <h2>Section 2</h2>
-      <p>This is the second section of the website.</p>
+    <section id="services">
+      <h2>Services</h2>
+      <p>Highlight the services you offer and how they can benefit your customers.</p>
+    </section>
 
-      <div class="product">
-        <img src="product1.jpg" alt="Product 1">
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>Showcase your previous work and projects to demonstrate your skills and expertise.</p>
+    </section>
+
+    <section id="testimonials">
+      <h2>Testimonials</h2>
+      <p>Display testimonials from satisfied customers to build trust and credibility.</p>
+    </section>
+
+    <section id="ecommerce">
+      <h2>E-commerce</h2>
+      <p>Present your products or services for online purchase and provide an easy way for customers to make transactions.</p>
+
+      <div class="product-card">
         <h3>Product 1</h3>
-        <p>$99.99</p>
+        <p>Description of Product 1.</p>
+        <p>Price: $19.99</p>
         <button>Add to Cart</button>
       </div>
 
-      <div class="product">
-        <img src="product2.jpg" alt="Product 2">
+      <div class="product-card">
         <h3>Product 2</h3>
-        <p>$149.99</p>
+        <p>Description of Product 2.</p>
+        <p>Price: $29.99</p>
         <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <h3>Product 3</h3>
+        <p>Description of Product 3.</p>
+        <p>Price: $39.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message">
+      </form>
+    </section>
+
+    <section class="newsletter-section">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Stay updated with our latest news and offers by subscribing to our monthly newsletter.</p>
+      <div class="newsletter-form">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="submit" value="Subscribe">
       </div>
     </section>
   </main>
@@ -122,6 +174,5 @@
   <footer>
     <p>&copy; 2023 Your Name</p>
   </footer>
-
-  <div class="newsletter">
-    <h2>Subscribe to Our Newsletter
+</body>
+</html>
